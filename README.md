@@ -72,7 +72,31 @@ Support attaching receipts or other relevant documents to expense entries.
 
     Set up Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated builds and deployments.
 
-## Environment Variables
+  ## Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- MongoDB installed locally or a MongoDB Atlas account
+- Git
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Vedantbaliyan/Finance-Tracker-System.git
+cd Finance-Tracker-System
+
+2. **Install dependencies**
+
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install
+
+3. Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file in backend folder
 
@@ -81,6 +105,22 @@ create config folder and add config.env file in it and all all env variables the
 `MONGO_URL` : Your MongoDB Connection String
 
 `PORT`: PORT number
+
+4.Run the App Locally
+# Start backend
+cd backend
+npm run dev
+
+# Start frontend (in a new terminal)
+cd ../frontend
+npm run dev
+
+
+App will be live on:
+
+Frontend: http://localhost:5173
+
+Backend: http://localhost:8000
 
 
 ## Tech Stack
