@@ -8,6 +8,7 @@ import morgan from "morgan";
 import transactionRoutes from "./Routers/Transactions.js";
 import userRoutes from "./Routers/userRouter.js";
 import path from "path";
+import setupSwaggerDocs from "./swagger.js";
 
 dotenv.config({ path: "./config/config.env" });
 const app = express();
@@ -45,6 +46,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+setupSwaggerDocs(app);
 app.listen(port, () => {
   console.log(`Server is listening on http://localhost:${port}`);
 });
