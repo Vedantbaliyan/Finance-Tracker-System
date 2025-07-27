@@ -1,121 +1,133 @@
 # Expense Management System using MERN Stack
 
-### Vercel Link: https://expense-tracker-app-three-beryl.vercel.app/
+### 🔗 Vercel Link: https://expense-tracker-app-three-beryl.vercel.app/
 
-## Project Description:
+## 🧾 Project Description
 
-The Expense Management System is a web-based application designed to assist users in tracking and managing their daily expenses. This system is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to create a scalable, responsive, and user-friendly application.
+The Expense Management System is a full-stack web application designed to help users track and manage their expenses. Built using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js), it provides an intuitive UI, powerful backend, and insightful analytics.
 
-## Objectives:
+---
 
-1. Simplify expense tracking for individuals and organizations.
-2. Provide detailed insights into spending patterns to enable better financial management.
-3. Offer a platform for users to create, update, and delete expenses and categories.
-4. Generate comprehensive reports based on user-defined time periods and categories.
+## 🎯 Objectives
 
-## Features
+1. Simplify expense tracking and organization.
+2. Provide deep insights into user spending behavior.
+3. Offer CRUD functionality for expenses and categories.
+4. Generate visual reports and summaries.
 
-- User Authentication and Authorization:
-    - Allow users to sign up and log in to their personal accounts using secure authentication mechanisms.
-    - Implement role-based access control for administrative tasks.
+---
 
-- Expense and Category Management:
-    - Enable users to create, update, and delete expense entries and categories.
-    - Track expenses by date, category, and description.
-    - Support attaching receipts or other relevant documents to expense entries.
+## ✨ Features
 
-- Dashboard and Reporting:
-    - Provide a visual dashboard displaying an overview of the user's expenses, including total expenses, expenses by category, and recent transactions.
-    - Generate reports based on selected date ranges and categories, displaying pie charts and bar graphs to help users understand their spending patterns.
+### 🔐 Authentication & Authorization
+- Register/Login functionality
+- JWT-based secure authentication
+- Role-based access control
 
-- Responsive User Interface:
-    - Design a clean, responsive user interface that works seamlessly across desktop, tablet, and mobile devices.
-    - Utilize React.js for building reusable UI components and managing state effectively.
+### 💸 Expense & Category Management
+- Add, update, delete expense entries
+- Manage custom categories
+- Attach receipts (if needed)
 
-## Technical Architecture:
+### 📊 Dashboard & Reporting
+- Total expense summaries
+- Expense breakdown by category and time
+- Bar and pie charts powered by chart.js
 
-- Frontend:
-    - Utilize React.js for building the user interface, tsparticle library for awesome background effect and used other libraries like unique-names-generator, react-datepicker, moment
-    - Implement responsive design using CSS frameworks like Bootstrap and Material-Icons.
+### 📱 Responsive UI
+- Clean and responsive layout using Bootstrap & Material Icons
+- Optimized for desktop and mobile
 
-- Backend:
-    - Use Node.js and Express.js to build a RESTful API for handling client requests and serving as the application's backend.
-    - Implement authentication and authorization using JSON Web Tokens (JWT) and middleware to protect endpoints.
+### 🧰 Swagger API Docs
+- API documentation using Swagger available at: `http://localhost:8000/api-docs`
 
-- Database:
-    - Store all data, including user information, expense entries, and categories, in MongoDB, a NoSQL database.
-    - Implement Mongoose ORM for schema definition and validation.
+---
 
-- Deployment:
-    - Deploy the application to a cloud provider like AWS and render.
-    - Frontend has deployed on AWS and backend on Render.
-    - Set up Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated builds and deployments.
+## ⚙️ Technical Architecture
 
-## 🔐 Demo Credentials
+### Frontend
+- Built with React 18+
+- Used libraries: `tsparticles`, `moment`, `react-datepicker`, `unique-names-generator`
 
-You can use the following credentials to test the application without creating a new account:
+### Backend
+- Express.js server with modular routes
+- Secure APIs with JWT middleware
+- Swagger/OpenAPI integration
 
-| Role  | Email                   | Password |
-|-------|-------------------------|----------|
-| User  | vedantbaliyan@gmail.com | 123      |
+### Database
+- MongoDB with Mongoose schemas and validations
 
-> ✅ You can also register a new account using your own email and password.
+### DevOps & Deployment
+- Frontend deployed on Vercel
+- Backend hosted on Render
+- GitHub for version control
 
-## Getting Started
+---
+
+## 🧪 Demo Credentials
+
+| Role | Email | Password |
+|------|-------------------------|----------|
+| User | vedantbaliyan@gmail.com | 123 |
+
+> ✅ You can also register a new account to test it yourself!
+
+---
+
+## 🛠️ Getting Started
 
 ### Prerequisites
-- Node.js (v18+ recommended)
-- MongoDB installed locally or a MongoDB Atlas account
+- Node.js (v18+)
+- MongoDB (local or Atlas)
 - Git
 
 ### Installation
-
-1. **Clone the repository**
 ```bash
-git clone https://github.com/Vedantbaliyan/Finance-Tracker-System.git
-cd Finance-Tracker-System
+# Clone the repo
+$ git clone https://github.com/Vedantbaliyan/Finance-Tracker-System.git
+$ cd Finance-Tracker-System
+
+# Install Backend dependencies
+$ cd backend
+$ npm install
+
+# Install Frontend dependencies
+$ cd ../frontend
+$ npm install
 ```
 
-2. **Install dependencies**
-```bash
-# Backend
-cd backend
-npm install
-
-# Frontend
-cd ../frontend
-npm install
-```
-
-3. **Environment Variables**
-
-To run this project, you will need to add the following environment variables to your `.env` file in the `backend` folder.
-
-Create a `config` folder and add a `config.env` file in it and add all env variables there:
-
+### Setup Environment Variables
+Create a `config` folder inside `backend` and add a file named `config.env`:
 ```env
-MONGO_URL=<your MongoDB connection string>
+MONGO_URL=your_mongo_uri
 PORT=8000
+JWT_SECRET=your_jwt_secret
 ```
 
-4. **Run the App Locally**
+### Run the App
 ```bash
-# Start backend
-cd backend
-npm run dev
+# Start backend server
+$ cd backend
+$ npm run dev
 
-# Start frontend (in a new terminal)
-cd ../frontend
-npm run dev
+# Start frontend
+$ cd ../frontend
+$ npm run dev
 ```
 
-App will be live on:
+### Access the App
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:8000`
+- Swagger Docs: `http://localhost:8000/api-docs`
 
-- Frontend: http://localhost:5173
-- Backend: http://localhost:8000
+---
 
-## Tech Stack
+## 🚀 Tech Stack
 
-**Client:** React, Redux, react-bootstrap, Material Icons, tsparticles  
-**Server:** Node, Express  
-**Database:** MongoDB
+**Client:** React, tsparticles, Bootstrap, Material Icons  
+**Server:** Node.js, Express.js, Swagger  
+**Database:** MongoDB (with Mongoose ORM)
+
+---
+
+> 👨‍💻 Made with 💻 by Vedant Baliyan
